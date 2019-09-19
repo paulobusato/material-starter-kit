@@ -1,0 +1,40 @@
+{
+  "name": "material-starter-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^4.2.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "@material/button": "^3.2.0",
+    "@material/checkbox": "^3.2.0",
+    "@material/data-table": "^3.2.0",
+    "@material/drawer": "^3.2.0",
+    "@material/layout-grid": "^3.1.0",
+    "@material/ripple": "^3.2.0",
+    "@material/theme": "^3.1.0",
+    "@material/top-app-bar": "^3.2.0",
+    "@material/typography": "^3.1.0"
+  }
+}
