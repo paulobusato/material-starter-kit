@@ -25,6 +25,10 @@ $mdc-theme-on-surface: #000000;
 @import "@material/tab-indicator/mdc-tab-indicator";
 @import "@material/tab/mdc-tab";
 
+body {
+    @include mdc-theme-prop('background-color', $mdc-theme-background);
+}
+
 #logo-wrapper {
     display: flex;
     justify-content: center;
@@ -36,4 +40,8 @@ $mdc-theme-on-surface: #000000;
 #main-tab {
     display: flex;
     justify-content: center;
+}
+
+.display-hidden {
+    display: none;
 }
