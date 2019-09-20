@@ -24,6 +24,7 @@ $mdc-theme-on-surface: #000000;
 @import "@material/tab-scroller/mdc-tab-scroller";
 @import "@material/tab-indicator/mdc-tab-indicator";
 @import "@material/tab/mdc-tab";
+@import "@material/data-table/mdc-data-table";
 
 body {
     @include mdc-theme-prop('background-color', $mdc-theme-background);
@@ -43,5 +44,11 @@ body {
 }
 
 .display-hidden {
-    display: none;
+    display: none !important;
+}
+
+.tab-content {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
