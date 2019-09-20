@@ -10,108 +10,56 @@
     <title>Document</title>
 </head>
 <body class="mdc-typography">
-    <header class="mdc-top-app-bar">
-        <div class="mdc-top-app-bar__row">
-            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
-                <span class="mdc-top-app-bar__title">eComida</span>
-            </section>
-            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Bookmark this page">search</button>
-            </section>
-        </div>
-    </header>
-    <aside class="mdc-drawer mdc-top-app-bar--fixed-adjust">
-        <div class="mdc-drawer__content">
-            <nav class="mdc-list">
-                <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
-                    <span class="mdc-list-item__text">Pedido</span>
-                </a>
-                <a class="mdc-list-item" href="#">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
-                    <span class="mdc-list-item__text">Produto</span>
-                </a>
-                <a class="mdc-list-item" href="#">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-                    <span class="mdc-list-item__text">Ingrediente</span>
-                </a>
-                <a class="mdc-list-item" href="#">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-                    <span class="mdc-list-item__text">Estabelecimento</span>
-                </a>
-            </nav>
-        </div>
-    </aside>
-    <div class="mdc-drawer-scrim"></div>
-    <div class="mdc-top-app-bar--fixed-adjust" style="width: 100%">
-        <div class="mdc-layout-grid">
-            <div class="mdc-layout-grid__inner">
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
-                    <h1 class="mdc-typography--headline3">Pedidos</h1>
-                </div>
+    <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12" id="logo-wrapper">
+                <h1 class="mdc-typography--headline2">eComida</h1>
             </div>
-            <div class="mdc-layout-grid__inner">
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-                    <div class="mdc-data-table">
-                        <table class="mdc-data-table__table" aria-label="Dessert colories">
-                            <thead>
-                                <tr class="mdc-data-table__header-row">
-                                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Numero</th>
-                                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Data</th>
-                                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Nome</th>
-                                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Endereco</th>
-                                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Bairro</th>
-                                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Cidade</th>
-                                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Status</th>
-                                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Ações</th>
-                                </tr>
-                            </thead>
-                            <tbody class="mdc-data-table__content">
-                                <tr class="mdc-data-table__row">
-                                    <td class="mdc-data-table__cell">1</td>
-                                    <td class="mdc-data-table__cell">10/05/2020</td>
-                                    <td class="mdc-data-table__cell">Cliente sem nome</td>
-                                    <td class="mdc-data-table__cell">Av. Sem Nome</td>
-                                    <td class="mdc-data-table__cell">Bairro distante</td>
-                                    <td class="mdc-data-table__cell">Cidade sem luz</td>
-                                    <td class="mdc-data-table__cell">Em andamento</td>
-                                    <td class="mdc-data-table__cell">
-                                        <button class="mdc-button mdc-button--outlined">
-                                            <span class="mdc-button__label">Editar</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="mdc-data-table__row">
-                                    <td class="mdc-data-table__cell">2</td>
-                                    <td class="mdc-data-table__cell">10/05/2020</td>
-                                    <td class="mdc-data-table__cell">Cliente sem nome</td>
-                                    <td class="mdc-data-table__cell">Av. Sem Nome</td>
-                                    <td class="mdc-data-table__cell">Bairro distante</td>
-                                    <td class="mdc-data-table__cell">Cidade sem luz</td>
-                                    <td class="mdc-data-table__cell">Finalizado</td>
-                                    <td class="mdc-data-table__cell">
-                                        <button class="mdc-button mdc-button--outlined">
-                                            <span class="mdc-button__label">Editar</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="mdc-data-table__row">
-                                    <td class="mdc-data-table__cell">3</td>
-                                    <td class="mdc-data-table__cell">10/05/2020</td>
-                                    <td class="mdc-data-table__cell">Cliente sem nome</td>
-                                    <td class="mdc-data-table__cell">Av. Sem Nome</td>
-                                    <td class="mdc-data-table__cell">Bairro distante</td>
-                                    <td class="mdc-data-table__cell">Cidade sem luz</td>
-                                    <td class="mdc-data-table__cell">Em preparo</td>
-                                    <td class="mdc-data-table__cell">
-                                        <button class="mdc-button mdc-button--outlined">
-                                            <span class="mdc-button__label">Editar</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+        </div>
+        <div class="mdc-layout-grid__inner" id="main-tab">
+            <div class="mdc-layout-grid__cell--span-6">
+                <div class="mdc-tab-bar" role="tablist">
+                    <div class="mdc-tab-scroller">
+                        <div class="mdc-tab-scroller__scroll-area">
+                            <div class="mdc-tab-scroller__scroll-content">
+                                <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                                    <span class="mdc-tab__content">
+                                        <span class="mdc-tab__text-label">Pedido</span>
+                                        <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                        </span>
+                                    </span>
+                                    <span class="mdc-tab__ripple"></span>
+                                </button>
+                                <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                                    <span class="mdc-tab__content">
+                                        <span class="mdc-tab__text-label">Produto</span>
+                                        <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                        </span>
+                                    </span>
+                                    <span class="mdc-tab__ripple"></span>
+                                </button>
+                                <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                                    <span class="mdc-tab__content">
+                                        <span class="mdc-tab__text-label">Ingrediente</span>
+                                        <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                        </span>
+                                    </span>
+                                    <span class="mdc-tab__ripple"></span>
+                                </button>
+                                <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                                    <span class="mdc-tab__content">
+                                        <span class="mdc-tab__text-label">Estabelecimento</span>
+                                        <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                        </span>
+                                    </span>
+                                    <span class="mdc-tab__ripple"></span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

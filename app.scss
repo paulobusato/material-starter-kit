@@ -9,60 +9,31 @@ html, body {
     padding: 0;
 }
 
-body {
-    display: flex;
-    height: 100vh;
-}
-
-$mdc-theme-primary: #4caf50;
-// $mdc-theme-secondary: #feeae6;
+$mdc-theme-primary: #356859;
+$mdc-theme-secondary: #FD5523;
+$mdc-theme-background: #FFFBE6;
+$mdc-theme-surface: #B9E4C9;
 $mdc-theme-on-primary: #000000;
-// $mdc-theme-on-secondary: #442b2d;
+$mdc-theme-on-secondary: #442b2d;
+$mdc-theme-on-background: #000000;
+$mdc-theme-on-surface: #000000;
 
-@import "@material/top-app-bar/mdc-top-app-bar";
-@import "@material/icon-button/mdc-icon-button";
-@import "@material/button/mdc-button";
-@import "@material/drawer/mdc-drawer";
-@import "@material/list/mdc-list";
 @import "@material/typography/mdc-typography";
 @import "@material/layout-grid/mdc-layout-grid";
-@import "@material/checkbox/mdc-checkbox";
-@import "@material/data-table/mdc-data-table";
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
 
-
-.mdc-top-app-bar {
-    // @include mdc-top-app-bar-ink-color(#000000);
-    // @include mdc-top-app-bar-icon-ink-color(#000000);
-    // @include mdc-top-app-bar-fill-color(#4caf50);
+#logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $mdc-theme-primary;
+    font-weight: bold;
 }
 
-.mdc-drawer {
-    @include mdc-drawer-surface-fill-color(#4caf50);
-    @include mdc-drawer-item-icon-ink-color(#000000);
-    @include mdc-drawer-item-text-ink-color(#000000);
-    @include mdc-drawer-item-activated-icon-ink-color(#000000);
-    @include mdc-drawer-item-activated-text-ink-color(#000000);
-
-}
-  
-.mdc-drawer-app-content {
-    flex: auto;
-    overflow: auto;
-    position: relative;
-}
-
-.main-content {
-    overflow: auto;
-    height: 100%;
-}
-
-.mdc-top-app-bar {
-    z-index: 7;
-    position: absolute;
-}
-
-.mdc-data-table {
-    // @include mdc-data-table-divider-size(100px);
-    // @include mdc-data-table-stroke-size(200px);
-    // @include mdc-data-table-column-widths(10px);
+#main-tab {
+    display: flex;
+    justify-content: center;
 }
