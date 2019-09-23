@@ -1,6 +1,9 @@
 import { MDCTextField } from "@material/textfield";
 import {MDCList} from "@material/list";
 import { MDCRipple } from "@material/ripple";
+import {MDCDataTable} from '@material/data-table';
+
+const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
 
 const list = MDCList.attachTo(document.querySelector('.mdc-list'));
 list.wrapFocus = true;

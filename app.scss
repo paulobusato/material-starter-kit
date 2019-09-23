@@ -25,6 +25,9 @@ $mdc-theme-on-surface: #000000;
 @import "@material/list/mdc-list";
 @import "@material/textfield/mdc-text-field";
 @import "@material/card/mdc-card";
+@import "@material/button/mdc-button";
+@import "@material/ripple/mdc-ripple";
+@import "@material/data-table/mdc-data-table";
 
 body {
     @include mdc-theme-prop('background-color', $mdc-theme-background);
@@ -96,4 +99,13 @@ body {
 .pedido_endereco {
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+.produtos {
+    height: 100%;
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20% 80%;
+    column-gap: 1rem
 }
