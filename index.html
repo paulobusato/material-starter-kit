@@ -10,86 +10,122 @@
     <title>Document</title>
 </head>
 <body class="mdc-typography">
-    <div class="mdc-layout-grid main-grid">
-        <div class="mdc-layout-grid__inner">
-            <div class="mdc-layout-grid__cell--span-2">
-                <aside class="mdc-drawer">
-                    <div class="mdc-drawer__header">
-                        <h3 class="mdc-drawer__title" id="logo">eComida</h3>
-                    </div>
-                    <div class="mdc-drawer__content">
-                        <nav class="mdc-list">
-                            <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">shopping_cart</i>
-                                <span class="mdc-list-item__text">Pedido</span>
-                            </a>
-                            <a class="mdc-list-item" href="#">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">edit</i>
-                                <span class="mdc-list-item__text">Produto</span>
-                            </a>
-                            <a class="mdc-list-item" href="#">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">edit</i>
-                                <span class="mdc-list-item__text">Ingrediente</span>
-                            </a>
-                            <a class="mdc-list-item" href="#">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">edit</i>
-                                <span class="mdc-list-item__text">Estabelecimento</span>
-                            </a>
-                        </nav>
-                    </div>
-                </aside>
+    <aside class="mdc-drawer">
+        <div class="mdc-drawer__header">
+            <h3 class="mdc-drawer__title" id="logo">eComida</h3>
+        </div>
+        <div class="mdc-drawer__content">
+            <nav class="mdc-list">
+                <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">shopping_cart</i>
+                    <span class="mdc-list-item__text">Pedido</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">edit</i>
+                    <span class="mdc-list-item__text">Produto</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">edit</i>
+                    <span class="mdc-list-item__text">Ingrediente</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">edit</i>
+                    <span class="mdc-list-item__text">Estabelecimento</span>
+                </a>
+            </nav>
+        </div>
+    </aside>
+    <div class="dashboards">
+        <div class="mdc-card dashboards__item">
+            <h2 class="mdc-typography--subtitle1 dashboards__titulo">Pendentes</h2>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
             </div>
-            <div class="mdc-layout-grid__cell--span-10">
-                <div class="mdc-layout-grid__inner card-grid">
-                    <div class="mdc-layout-grid__cell--span-3">
-                        <div class="mdc-card pedido-card">
-                            <h2 class="mdc-typography--headline6">Pendentes</h2>
-                            <div class="mdc-card mdc-card--outlined card-row">
-                                <div class="mdc-layout-grid__inner content-grid">
-                                    <div class="mdc-layout-grid__cell--span-1"></div>
-                                </div>
-                            </div>
-                            <div class="mdc-card mdc-card--outlined card-row">
-                                <div class="mdc-layout-grid__inner content-grid">
-                                    <div class="mdc-layout-grid__cell--span-1"></div>
-                                </div>
-                            </div>
-                            <div class="mdc-card mdc-card--outlined card-row">
-                                <div class="mdc-layout-grid__inner content-grid">
-                                    <div class="mdc-layout-grid__cell--span-1"></div>
-                                </div>
-                            </div>
-                            <div class="mdc-card mdc-card--outlined card-row">
-                                <div class="mdc-layout-grid__inner content-grid">
-                                    <div class="mdc-layout-grid__cell--span-1"></div>
-                                </div>
-                            </div>
-                            <div class="mdc-card mdc-card--outlined card-row">
-                                <div class="mdc-layout-grid__inner content-grid">
-                                    <div class="mdc-layout-grid__cell--span-1"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mdc-layout-grid__cell--span-3">
-                        <div class="mdc-card main-card">
-                            <h2 class="mdc-typography--headline6">Em produção</h2>
-                        </div>
-                    </div>
-                    <div class="mdc-layout-grid__cell--span-3">
-                        <div class="mdc-card main-card">
-                            <h2 class="mdc-typography--headline6">Entregando</h2>
-                        </div>
-                    </div>
-                    <div class="mdc-layout-grid__cell--span-3">
-                        <div class="mdc-card main-card">
-                            <h2 class="mdc-typography--headline6">Finalizado</h2>
-                        </div>
-                    </div>
-                    <div class="mdc-layout-grid__cell--span-12">
-                        <div class="mdc-card main-card"></div>
-                    </div>
-                </div>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+        </div>
+        <div class="mdc-card dashboards__item">
+            <h2 class="mdc-typography--subtitle1 dashboards__titulo">Em produção</h2>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+        </div>
+        <div class="mdc-card dashboards__item">
+            <h2 class="mdc-typography--subtitle1 dashboards__titulo">Entregando</h2>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+        </div>
+        <div class="mdc-card dashboards__item">
+            <h2 class="mdc-typography--subtitle1 dashboards__titulo">Finalizado</h2>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
+            </div>
+            <div class="mdc-card mdc-card--outlined dashboards__pedido">
+                <span class="mdc-typography--body2 pedido__produto">1x Salada dupla</span>
+                <span class="mdc-typography--body2 pedido__preco">R$ 19,20</span>
+                <span class="mdc-typography--body2 pedido_endereco">Av. Francisco Mardegan - Boa Vista</span>
             </div>
         </div>
     </div>
